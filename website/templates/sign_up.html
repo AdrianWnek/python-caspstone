@@ -1,0 +1,56 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block content%}
+<style>
+    body {
+      background-image: url('https://wallpapercave.com/wp/wp6899583.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 1%;
+    }
+</style>
+<form method="POST">
+    <br /> <br /> <br /> <br />
+    <h1 style="text-align:center">Sign Up</h1>
+    <br /> <br /> <br />
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input 
+        type="email" 
+        class="form-control" 
+        id="email" 
+        name="email" 
+        placeholder="Enter Email Address"
+        />
+    </div>
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input 
+        type="text" 
+        class="form-control" 
+        id="firstName" 
+        name="firstName" 
+        placeholder="Enter Your First Name"
+        />
+    </div>
+    <div class="form-group">
+        <label for="password1">Password</label>
+        <input 
+        type="password" 
+        class="form-control" 
+        id="password1" 
+        name="password1" 
+        placeholder="Enter Password"
+        />
+    </div>
+    <div class="form-group">
+        <label for="password2">Confirm Password</label>
+        <input 
+        type="password" 
+        class="form-control" 
+        id="password2" 
+        name="password2" 
+        placeholder="(Confirm Password)"
+        />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary" style="background-color:rgb(0, 203, 105);">submit</button>    
+</form>
+{% endblock %}
